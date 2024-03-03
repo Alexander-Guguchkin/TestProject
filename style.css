@@ -39,8 +39,8 @@ a{
     align-items: center;
     border-radius: 6px;
     padding: 20px;
-    min-height: 59%;
-    max-width: 69%;
+    min-height: 60%;
+    max-width: 79%;
     background: #3d4b53;
 
 }
@@ -90,24 +90,23 @@ ul{
 }
 
 @media  (min-width: 320px) and  (max-width: 768px){
-    body, .form__input::placeholder{
+    body, .form__input::placeholder, button{
         font-size: 14px;
     }
     .form{
         width: 400px;
     }
     .output__table{
-        width: 200px;
+        max-width: 200px;
     }
 
 }
-@media  (min-width: 768px) and  (max-width: 1200px){
-    body, .form__input::placeholder{
+@media  (min-width: 768px) {
+    body, .form__input::placeholder,button{
         font-size: 16px;
     }
+
     .form{
         width: 400px;
     }
-
-
 }
