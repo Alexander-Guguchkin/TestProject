@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<?php
+require_once 'PrimaryHeader.html';
+?>
     <div class="wrapper">
         <div  class="form">
-                <input type="text" placeholder="ФИО" class="form__input" id="FIO" required>
-                <input type="text" placeholder="Адрес" class="form__input" id="address" required>
-                <input type="tel" placeholder="Телефон" class="form__input" id="phone" required>
-                <input type="email" placeholder="Email" class="form__input" id="email" required>
+                <input type="text" placeholder="ФИО" class="form__input" id="FIO">
+                <input type="text" placeholder="Адрес" class="form__input" id="address">
+                <input type="tel" placeholder="Телефон" class="form__input" id="phone">
+                <input type="email" placeholder="Email" class="form__input" id="email">
             <div class="form__button">
                 <button class="button__send">Отправить</button>
             </div>
@@ -26,9 +29,6 @@
                 </tr>
             </thead>
             <tbody>
-<!--                <tr>-->
-<!--                    <td></td>-->
-<!--                </tr>-->
             </tbody>
         </table>
     </div>
