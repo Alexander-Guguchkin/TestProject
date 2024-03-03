@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Demis</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <?php
 require_once 'PrimaryHeader.html';
 ?>
     <div class="wrapper">
         <div  class="form">
+            <h4>Обратная связь</h4>
                 <input type="text" placeholder="ФИО" class="form__input" id="FIO">
                 <input type="text" placeholder="Адрес" class="form__input" id="address">
                 <input type="tel" placeholder="Телефон" class="form__input" id="phone">
@@ -33,5 +26,3 @@ require_once 'PrimaryHeader.html';
         </table>
     </div>
     <script src="main.js"></script>
-</body>
-</html>

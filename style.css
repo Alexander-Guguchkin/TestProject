@@ -1,63 +1,113 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+body{
+    background: #ececec;
+    color: white;
 
+}
 .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 79vh;
 
 }
+header{
+    background: #3d4b53;
+    padding: 14px;
+}
+a{
+    text-decoration: none;
+    padding: 6px;
+    border: 1px solid #ba1735;
+    background: #ba1735;
+    color: white;
+    border-radius: 4px;
+    transition: all .14s ;
+}
+
 .form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 20px;
-    min-height: 40%;
-    min-width: 29%;
-    max-width: 40%;
+    min-height: 59%;
+    max-width: 69%;
     background: #3d4b53;
 
 }
 .form__input{
     border: 2px solid #ba1735;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 6px;
+    background: #ba1735;
     width: 90%;
 }
 .form__input::placeholder{
-    color: black;
+    color: white;
 }
 .button__send{
     border: 2px solid #ba1735;
     padding: 10px;
-    background: white;
-    border-radius: 12px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all .14s ;
+    background: #ba1735;
+    color: white;
 }
 
-.button__send:active{
+.button__send:active, a:active{
     background: rgba(0, 0, 0, 0.34);
     transform: scale(.9);
     color: white;
 }
-table{
-
+.output__table{
     border-radius: 4px;
     background: #3d4b53;
     padding: 6px;
 }
 td{
     border: 2px solid #ba1735;
-    padding: 6px 10px;
+    padding: 6px 9px;
     border-radius: 4px;
-    background: white;
     text-align: center;
+    background: #ba1735;
+
 }
 
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+@media  (min-width: 320px) and  (max-width: 768px){
+    body, .form__input::placeholder{
+        font-size: 14px;
+    }
+    .form{
+        width: 400px;
+    }
+    .output__table{
+        width: 200px;
+    }
+
+}
+@media  (min-width: 768px) and  (max-width: 1200px){
+    body, .form__input::placeholder{
+        font-size: 16px;
+    }
+    .form{
+        width: 400px;
+    }
+
+
+}
