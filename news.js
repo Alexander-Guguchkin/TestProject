@@ -1,5 +1,4 @@
 'use strict'
-
 getNews();
 function getNews(){
     fetch(`/getNews.php`).then(response => {
@@ -9,13 +8,10 @@ function getNews(){
         return response.json();
     })
         .then(data => {
-            console.log(data)
-            for (let i = 0; i < 3; i++) {
-                let str  = parseString(data[i].text);
-                renderNews(data[i].title, str[0], data[i].date);
+            // console.log(data)
+            for (let dataKey of data) {
+                renderNews(dataKey.title, dataKey.text, dataKey.date);
             }
-
-            
         })
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
@@ -36,8 +32,4 @@ function renderNews(title, text, date){
 </div>
   
         `;
-}
-
-function parseString(text){
-    return text.split(".");
 }

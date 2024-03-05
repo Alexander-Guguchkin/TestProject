@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Demis</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
 <?php
-    require_once 'PrimaryHeader.html';
+    require_once 'PrimaryHeader.php';
 ?>
+<div class="wrapper__news">
 
+</div>
+<script src="main.js"></script>
 </body>
-</html>

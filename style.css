@@ -88,16 +88,43 @@ ul{
     justify-content: space-around;
     list-style: none;
 }
+.wrapper__news{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
+}
+.news__blank{
+    flex-grow: 1;
+    max-width: 510px;
+    background: #3d4b53;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+
+}
+.news__text{
+    text-align: justify;
+    margin: 20px 0;
+}
+.news__date{
+    display: flex;
+    justify-content: end;
+}
 @media  (min-width: 320px) and  (max-width: 768px){
     body, .form__input::placeholder, button{
-        font-size: 14px;
+        font-size: 19px;
     }
     .form{
         width: 400px;
     }
     .output__table{
         max-width: 200px;
+    }
+    .news__blank{
+        max-width: 250px;
+        /*font-size: 19px;*/
     }
 
 }
@@ -107,6 +134,6 @@ ul{
     }
 
     .form{
-        width: 400px;
+        max-width: 400px;
     }
 }
