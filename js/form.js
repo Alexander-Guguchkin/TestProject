@@ -56,7 +56,7 @@ function renderUser(FIO, address, phone, email){
         `;
 }
 function addUser(FIO, address, phone, email){
-    fetch('/addUser.php', {
+    fetch('/actions/addUser.php', {
         method: 'POST',
         body: JSON.stringify({FIO, address, phone, email}),
         headers: {
@@ -68,7 +68,7 @@ function addUser(FIO, address, phone, email){
     renderUser(FIO, address, phone, email);
 }
 function getUser(){
-    fetch(`/getUser.php`).then(response => {
+    fetch(`/actions/getUser.php`).then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

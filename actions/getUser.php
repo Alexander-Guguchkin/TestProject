@@ -1,7 +1,7 @@
 <?php
-require_once 'Connection.php';
+require_once '../Class/Connection.php';
 $con = new Connection();
-$query = 'SELECT * FROM News';
+$query = 'SELECT * FROM Forms';
 $res = mysqli_query($con->link(), $query);
 $data = [];
 while ($row = mysqli_fetch_assoc($res)) {

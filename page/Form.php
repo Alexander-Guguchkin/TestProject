@@ -1,5 +1,5 @@
 <?php
-require_once 'PrimaryHeader.php';
+require_once '../template/PrimaryHeader.php';
 ?>
     <div class="wrapper">
         <div  class="form">
@@ -16,4 +16,4 @@ require_once 'PrimaryHeader.php';
     </div>
 <div class="output__table">
 </div>
-    <script src="form.js"></script>
+    <script src="../js/form.js"></script>
