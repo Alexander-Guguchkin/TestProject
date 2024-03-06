@@ -62,24 +62,16 @@ function addUser(FIO, address, phone, email){
         headers: {
             'Content-Type': 'application/json'
         }
-    })  .catch(error => {
-            console.error('There has been a problem with your fetch operation:', error);
-        });
+    });
     renderUser(FIO, address, phone, email);
 }
 function getUser(){
     fetch(`/actions/getUser.php`).then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
         return response.json();
     })
         .then(data => {
             for (let dataKey of data) {
                 renderUser(dataKey.FIO, dataKey.address, dataKey.phone, dataKey.email)
             }
-        })
-        .catch(error => {
-            console.error('There has been a problem with your fetch operation:', error);
         });
 }
