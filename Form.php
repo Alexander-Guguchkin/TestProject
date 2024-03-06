@@ -12,17 +12,8 @@ require_once 'PrimaryHeader.php';
                 <button class="button__send">Отправить</button>
             </div>
         </div>
-        <table class="output__table">
-            <thead>
-                <tr>
-                    <td>ФИО</td>
-                    <td>Адрес</td>
-                    <td>Телефон</td>
-                    <td>Email</td>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+
     </div>
+<div class="output__table">
+</div>
     <script src="form.js"></script>

@@ -1,7 +1,7 @@
 'use strict'
 let storage = [];
 let buttonSend = document.querySelector('.button__send');
-let tbody = document.querySelector('tbody');
+let table = document.querySelector('.output__table');
 getUser();
 buttonSend.addEventListener('click', ()=>{
     let inputFIO = document.querySelector('#FIO').value;
@@ -32,13 +32,27 @@ buttonSend.addEventListener('click', ()=>{
     }
 });
 function renderUser(FIO, address, phone, email){
-    tbody.innerHTML+=`
-            <tr>
-                <td>${FIO}</td>
-                <td>${address}</td>
-                <td>${phone}</td>
-                <td>${email}</td>
-            </tr>      
+    table.innerHTML+=`
+<div class="wrapper__table">
+    <div class="head__table">
+        <div class="row">
+            <div class="column">ФИО</div>
+            <div class="column">Адрес</div>
+            <div class="column">Телефон</div>
+            <div class="column">Email</div>
+        </div>
+    </div>
+    <div class="body__table">
+                <div class="row">
+                    <div class="column">${FIO}</div>
+                    <div class="column">${address}</div>
+                    <div class="column">${phone}</div>
+                    <div class="column">${email}</div>
+            </div>   
+    </div>
+</div>
+
+   
         `;
 }
 function addUser(FIO, address, phone, email){

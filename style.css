@@ -4,6 +4,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
 body{
     background: #ececec;
@@ -13,10 +14,9 @@ body{
 .wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    height: 79vh;
-
+    height: 920px;
+    margin: 2%;
 }
 header{
     background: #3d4b53;
@@ -39,8 +39,8 @@ a{
     align-items: center;
     border-radius: 6px;
     padding: 20px;
-    min-height: 60%;
-    max-width: 79%;
+    height: 60%;
+    width: 489px;
     background: #3d4b53;
 
 }
@@ -73,15 +73,15 @@ a{
     border-radius: 4px;
     background: #3d4b53;
     padding: 6px;
+    width: 20%;
+    margin: 0 auto;
 }
-td{
-    border: 2px solid #ba1735;
-    padding: 6px 9px;
-    border-radius: 4px;
-    text-align: center;
-    background: #ba1735;
+.wrapper__table{
+    display: flex;
+    justify-content: space-between;
+    margin:10px ;
+}
 
-}
 
 ul{
     display: flex;
@@ -112,28 +112,41 @@ ul{
     display: flex;
     justify-content: end;
 }
-@media  (min-width: 320px) and  (max-width: 768px){
-    body, .form__input::placeholder, button{
-        font-size: 19px;
+
+
+@media (min-width: 480px) and (max-width: 1200px){
+    *{
+        font-size: 1.8rem;
     }
-    .form{
-        width: 400px;
+
+    .form {
+        width: 90%;
     }
     .output__table{
-        max-width: 200px;
+        width: 90%;
     }
-    .news__blank{
-        max-width: 250px;
-        /*font-size: 19px;*/
-    }
-
-}
-@media  (min-width: 768px) {
-    body, .form__input::placeholder,button{
-        font-size: 16px;
+    .news__blank {
+        max-width: 100%;
     }
 
-    .form{
-        max-width: 400px;
+    .wrapper__news {
+        padding: 10px;
+    }
+
+    header {
+        padding: 2%;
+    }
+
+    .button__send,
+    a {
+        padding: 8px;
+    }
+
+    td {
+        padding: 4px 6px;
+    }
+
+    .news__text {
+        margin: 10px 0;
     }
 }
