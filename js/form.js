@@ -25,11 +25,8 @@ buttonSend.addEventListener('click', ()=>{
     else{
         alert('не все данные заполнены');
     }
-
-    for (let storageElement of storage) {
-        addUser(storageElement.FIO, storageElement.address, storageElement.phone, storageElement.email);
-
-    }
+    let lastElement = storage[storage.length-1];
+    addUser(lastElement.FIO, lastElement.address, lastElement.phone, lastElement.email)
 });
 function renderUser(FIO, address, phone, email){
     table.innerHTML+=`
